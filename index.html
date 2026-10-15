@@ -128,7 +128,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 
   <section id="work">
     <h2>What we do</h2>
-    <p class="intro">We&rsquo;ve taken brands from start-up to acquisition, trained and led teams, and advised beauty, wellness, FMCG and retail brands, nonprofits and cultural institutions. Founded by Kat Gabrielle in 2022. Working globally. <a class="inline" id="linkedin" href="#" target="_blank" rel="noopener">Let&rsquo;s connect.</a></p>
+    <p class="intro">We&rsquo;ve taken brands from start-up to acquisition, trained and led teams, and advised beauty, wellness, FMCG and retail brands, nonprofits and cultural institutions. Founded by <a class="inline" href="https://www.linkedin.com/in/katgabrielleau/" target="_blank" rel="noopener">Kat Gabrielle</a> in 2022. Working globally. <a class="inline" id="connect" href="mailto:kat@specialprojects.global">Let&rsquo;s connect.</a></p>
     <div class="svc" id="services">
       <div>
         <h3><span class="sq on"></span>Consulting <small>ongoing</small></h3>
@@ -172,7 +172,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
     </form>
     <div class="elsewhere">
       <a href="https://phase333.net" target="_blank" rel="noopener">→ Research and reports <span>via our research lab P3</span></a>
-      <a href="#" target="_blank" rel="noopener">→ Writing <span>Consensus Reality on Substack</span></a>
+      <a href="https://thisisspecialprojects.substack.com/" target="_blank" rel="noopener">→ Writing <span>Consensus Reality on Substack</span></a>
     </div>
   </section>
 
@@ -226,7 +226,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
       var off = '';
       try { new Intl.DateTimeFormat('en-GB', { timeZone: tz, timeZoneName: 'shortOffset' }).formatToParts(now).forEach(function(p){ if (p.type === 'timeZoneName') off = p.value; }); } catch (e) {}
       li.querySelector('em').textContent = off;
-      li.querySelector('.sq').classList.toggle('on', open);
+      li.querySelector('.sq').classList.toggle('on', tz === 'Australia/Melbourne');
     });
   }
   tick(); setInterval(tick, 15000);
